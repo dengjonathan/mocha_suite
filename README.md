@@ -13,6 +13,7 @@ This repo comes with the below packages pre-installed:
 <img src="assets/cat.gif"></img>
 
 To use this framework for testing:
+
 1. put all source files in the test/src directory
 2. put all tests in the test/spec directory
 3. update test/index.html with:
