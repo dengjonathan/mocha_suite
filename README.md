@@ -23,3 +23,7 @@ To use this framework for testing:
 4. $`open index.html` and enjoy Red-Green-Refactoring!
 
 I've included a simple hashtable implementation with tests as an example of how this works.
+
+## Why is this called HRR19 Espresson
+
+Because it includes the two coffee named JS testing libraries.  And to evoke the intensity of Hack Reactor and desperately trying to get your tests to pass late at night and early in the morning.
