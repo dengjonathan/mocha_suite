@@ -1,34 +1,45 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>Jon's Mocha Spec Runner</title>
+  <title>HRR19 Espresso</title>
   <link rel="stylesheet" href="../bower_components/mocha/mocha.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico">
 </head>
+
 <body>
-  <div id="mocha"></div>
+  <div class="title">
+    <img style="float:left;height:50px;width:50px;" src='../assets/logo.png' alt="coffee_logo"></img>
+    <h1>HRR19 Espresso Test Runner</h1>
+  </div>
+  <div id="mocha" style="clear: left;"></div>
   <script src="../bower_components/mocha/mocha.js"></script>
-  <script>mocha.setup('bdd');</script>
+  <script>
+  mocha.setup('bdd');
+  </script>
   <script src="../bower_components/chai/chai.js"></script>
   <script>
-    var assert = chai.assert;
-    var expect = chai.expect;
-    var should = chai.should();
+  var assert = chai.assert;
+  var expect = chai.expect;
+  var should = chai.should();
   </script>
   <!-- include any libraries you want to use here -->
   <script src='../bower_components/underscore/underscore.js'></script>
   <!-- bower:js -->
   <!-- endbower -->
   <!-- include source files here... -->
-<script src="src/hashTable.js"></script>
-<<script src="src/hashTableHelpers.js"></script>
+  <script src="src/hashTable.js"></script>
+  <script src="src/hashTableHelpers.js"></script>
   <!-- include spec files here... -->
   <script src="spec/test.js"></script>
   <script src="spec/hashTableSpec.js"></script>
   <script>
-    if (navigator.userAgent.indexOf('PhantomJS') === -1) {
-      mocha.run();
-    }
+  if (navigator.userAgent.indexOf('PhantomJS') === -1) {
+    mocha.run();
+  }
   </script>
+  <footer style="margin:30px;">Made with 💚 by <a href="http://jondeng.com">Jon Deng</a> 2016</footer>
 </body>
+
 </html>
