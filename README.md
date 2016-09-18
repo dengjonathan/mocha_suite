@@ -10,6 +10,7 @@ This repo comes with the below packages pre-installed:
 * underscore: utility functions
 
 ## How I uses this?
+<img src="assets/cat.gif"></img>
 
 To use this framework for testing:
 1. put all source files in the test/src directory
