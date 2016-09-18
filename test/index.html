@@ -8,19 +8,23 @@
 <body>
   <div id="mocha"></div>
   <script src="../bower_components/mocha/mocha.js"></script>
-  <script>mocha.setup('tdd');</script>
+  <script>mocha.setup('bdd');</script>
   <script src="../bower_components/chai/chai.js"></script>
   <script>
     var assert = chai.assert;
     var expect = chai.expect;
     var should = chai.should();
   </script>
+  <!-- include any libraries you want to use here -->
+  <script src='../bower_components/underscore/underscore.js'></script>
   <!-- bower:js -->
   <!-- endbower -->
   <!-- include source files here... -->
-
+<script src="src/hashTable.js"></script>
+<<script src="src/hashTableHelpers.js"></script>
   <!-- include spec files here... -->
   <script src="spec/test.js"></script>
+  <script src="spec/hashTableSpec.js"></script>
   <script>
     if (navigator.userAgent.indexOf('PhantomJS') === -1) {
       mocha.run();
